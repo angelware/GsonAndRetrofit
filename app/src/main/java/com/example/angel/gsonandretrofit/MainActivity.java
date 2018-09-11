@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         Call<City> cityCall = service.getWeather("London,UK",VariablesGlobales.KEY_API);
 
         //Este es un nuevo cambio para realizar las cosas.
+        //Esto tendria que hacer que varien las cosas
         cityCall.enqueue(new Callback<City>() {
             @Override
             public void onResponse(Call<City> call, Response<City> response) {
